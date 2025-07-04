@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MERN Stack Course</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0e1c26, #1a2c38);
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      color: #3ddc97;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    details {
+      background-color: #1f2e3d;
+      border: 1px solid #3ddc97;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      padding: 1rem 1.5rem;
+      transition: all 0.3s ease-in-out;
+      overflow: hidden;
+    }
+
+    details[open] {
+      animation: open 0.5s ease forwards;
+    }
+
+    @keyframes open {
+      from {
+        opacity: 0;
+        transform: scaleY(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scaleY(1);
+      }
+    }
+
+    summary {
+      font-size: 1.3rem;
+      font-weight: 600;
+      cursor: pointer;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    summary::before {
+      content: "➤";
+      position: absolute;
+      left: 0;
+      transition: transform 0.3s ease;
+    }
+
+    details[open] > summary::before {
+      transform: rotate(90deg);
+    }
+
+    ul {
+      margin: 1rem 0 0 1rem;
+      padding-left: 1rem;
+      list-style-type: disc;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    /* Nested accordion styles */
+    details > details {
+      margin-top: 1rem;
+      background: #273c4f;
+      border: 1px solid #3ddc97aa;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      summary {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Zero To Advance Frontend Course </h1>
+  <details>
+    <summary>Watch This Before Starting </summary>
+    <ul>
+
+        <li>History of Internet </li>
+        <li>How World Wide Web work</li>
+        <li>How Internet comes to home</li>
+        <li>How Mobile internet Works</li>
+    </ul>
+  </details>
+
+  <details>
+        <summary> HTML & CSS Basics</summary>
+        <details>
+            <summary>HTML</summary>
+            <ul>
+                <li>Watch this before learning HTML | HTTP request and response |</li>
+                <li>Learn Basic HTML </li>
+                <li>Inline Vs Block Elements | Div & Span Tags Explained </li>
+                <li>Semantic Tags</li>
+                <li>Global and Custom Attributes </li>
+                <li>HTML Forms</li>
+            </ul>
+        </details>
+        <details>
+            <summary>CSS</summary>
+            <ul>
+                <li>Getting Started with CSS</li>
+                <li>CSS Selectors: Element, Class, Id, and Pseudo Selectors </li>
+                <li>Cascade, Specificity & Inheritance Explained in Depth </li>
+                <li>CSS Box Model Explained in Depth | Part 1 </li>
+                <li>CSS Box Model Explained in Depth | Part 2 |</li>
+                <li>Percentage: The Underestimated CSS Unit </li>
+                <li>CSS Positions: Static, Relative, Absolute, Fixed, Sticky Explained </li>
+                <li>Transform, Translate, Transition, Shadows, Opacity, </li>
+                <li>Flexbox: The Inside Story | Flexbox Explained in Depth</li>
+                <li>Advance Flexbox Properties Explained</li>
+                <li> learning @media queries | Media Queries in CSS</li>
+                <li>z-index </li>
+            </ul>
+
+        </details>
+    </details>
+
+
+
+
+
+
+
+
+
+    <details>
+        <summary> JavaScript</summary>
+        <details>
+            <summary>Introduction to JavaScript</summary>
+            <ul>
+                <li>History of JavaScript</li>
+                <li>Introduction to JavaScript</li>
+            </ul>
+        </details>
+
+
+        <details>
+            <summary>JavaScript fundamental</summary>
+            <ul>
+                <li>DataTypes in JavaScript</li>
+                <li>JavaScript variable Explained in Depth let|var|const</li>
+                <li>Dialog Boxes in JavaScript |Alert,Prompt&Confirm</li>
+                <li>Template Literals | String Methods & Properties</li>
+                <li>Math Object in JavaScript</li>
+                <li>Comparison Operators in JavaScript</li>
+                <li>Logical Operators in JavaScript | And, Or, Not, Operators</li>
+                <li>Decision Making in JavaScript Using IF Statement</li>
+                <li>Optimize Decision Making Using Else If and Else</li>
+                <li>Nested IF ELSE Statement in JavaScript</li>
+                <li>Switch Statement in JavaScript</li>
+                <li>Ternary Operator in JavaScript</li>
+                <li>Objects in JavaScript</li>
+                <li>Object.freeze( ) vs Object.seal( )</li>
+                <li>Arrays in JavaScript</li>
+                <li>Most Common Array Methods in JavaScript</li>
+                <li>Multidimensional Arrays</li>
+                <li>Deep Vs Shallow Copy</li>
+                <li>While Loop in JavaScript</li>
+                <li>For Loop in JavaScript</li>
+                <li>Do While Loop in JavaScript</li>
+                <li>Introduction to Functions</li>
+                <li>Return Keyword in JavaScript</li>
+            </ul>
+        </details>
+
+
+        <details>
+            <summary>Intermediate JavaScript</summary>
+            <ul>
+                <li>Execution Context in JavaScript</li>
+                <li>Call Stack in JavaScript</li>
+                <li>What is Hoisting? | Most Asked JS Interview Question |</li>
+                <li>Global Scope vs Local Scope in Javascript</li>
+                <li>Lexical and Block Scope in JavaScript</li>
+                <li>Higher Order Functions and Callbacks in JavaScript</li>
+                <li>setTimeout and setInterval in JavaScript</li>
+                <li>Event Loop and Callback Queue in JavaScript</li>
+                <li>Difference between Methods and Functions in JavaScript</li>
+                <li>Arrow Functions in JavaScript</li>
+                <li>for of vs for in Loop forEach Array Method in JavaScript</li>
+                <li>Map, Filter, Reduce in JavaScript</li>
+                <li>Spread Operator</li>
+                <li>Rest Parameters in JavaScript</li>
+                <li>Destructuring in JavaScript</li>
+
+            </ul>
+        </details>
+        <details>
+            <summary>DOM Manipulation in JavaScript</summary>
+            <ul>
+                <li>What is BOM in JavaScript</li>
+                <li>Introduction to DOM | Document Object Model</li>
+                <li>Selecting Elements in JavaScript</li>
+                <li>Difference between innerText and textContent in JavaScript</li>
+                <li>getAttribute and setAttribute in JavaScript</li>
+                <li>How to apply styles in JavaScript</li>
+                <li>DOM Traversal | Access Parent Sibling & Children Elements</li>
+                <li>What is the Difference Between Element and Node?</li>
+                <li>append and appendChild</li>
+                <li>Creating Elements using JavaScript</li>
+                <li>Removing Elements using JavaScript</li>
+                <li>Event Bubbling and Event Capturing in JavaScript</li>
+                <li>Event Simulation in JavaScript</li>
+                <li>Event Delegation in JavaScript</li>
+
+                <li>Local Storage</li>
+            </ul>
+        </details>
+
+
+        <details>
+            <summary>Asynchronous JavaScript</summary>
+            <ul>
+                <li>What is API? Talking to the Outside World using JSON</li>
+                <li>Synchronous vs Asynchronous JavaScript</li>
+                <li>Callback Hell in JavaScript</li>
+                <li>What are Promises?</li>
+                <li> Callback Hell using Promises</li>
+                <li>Introducing Fetch API </li>
+                <li>Async Await Explained</li>
+                <li>Try and Catch Block</li>
+                <li>Optional Chaining</li>
+                <li>ES6 Modules | Import and Export</li>
+            </ul>
+        </details>
+
+
+        <details>
+            <summary>OOPS in JavaScript</summary>
+            <ul>
+                <li>OOPs (Encapsulation & Abstraction) and Factory Functions</li>
+                <li>Constructor Function and new Keyword</li>
+                <li>Classes in JavaScript</li>
+                <li>Private and Public Fields in Class</li>
+                <li>Static Properties And Methods on Classes</li>
+                <li>Getters and Setters</li>
+                <li>Prototypal Inheritance | Extends and Super Keyword</li>
+                <li>Demystifying THIS Keyword</li>
+                <li>Mastering JavaScript Dates
+                </li>
+                
+            </ul>
+
+        </details>
+
+    </details>
+
+    <details>
+        <summary> React.js</summary>
+        <details>
+            <summary>Fundamental</summary>
+            <ul>
+                <li>Why do we need React? |</li>
+                <li>How Much JavaScript do We Need for React?</li>
+                <li>What is React Element</li>
+                <li>What is JSX? </li>
+                <li>Render Multiple Elements in React </li>
+                <li>Introduction to React Component </li>
+                <li>How to Use Images in React? </li>
+
+            </ul>
+        </details>
+
+
+        <details>
+            <summary>Intermediate</summary>
+            <ul>
+                <li>Event Handling in ReactJS </li>
+                <li>How State Works in React</li>
+                <li>How useState Works </li>
+                <li>State Vs Props in React | When to use what?</li>
+                <li>What are React Fragments? </li>
+                <li>What is Children Prop in React</li>
+                <li>Conditional Rendering in React |</li>
+                <li>useEffect Hook in React</li>
+                <li>React Router</li>
+                <li>Dynamic Routing in React</li>
+                <li> Create Custom Hooks in React</li>
+
+            </ul>
+        </details>
+        <details>
+            <summary>Advance </summary>
+            <ul>
+                <li>Forms in React </li>
+                <li> Controlled Components</li>
+                <li>useRef Hook Explained </li>
+                <li>Create Custom Context</li>
+                <li>Context API</li>
+                <li> TailwindCSS with React </li>
+                <li>Code Splitting and Lazy Loading in React </li>
+                <li>Lifecycle Methods in React</li>
+                <li>Higher-Order Components In React </li>
+                <li>Virtual DOM, Reconciliation and Diffing Algorithm in React </li>
+               
+            </ul>
+        </details>
+    </details>
+
+
+
+    
+
+ 
+</body>
+</html>
