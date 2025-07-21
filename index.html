@@ -1,118 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MERN Stack Course</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javalaya MERN Stack Syallbus</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 2rem;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #f0f0f0;
+        }
 
-    body {
-      margin: 0;
-      padding: 2rem;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #0e1c26, #1a2c38);
-      color: #f0f0f0;
-      line-height: 1.6;
-    }
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #3ddc97;
+            text-shadow: 1px 1px 10px rgba(61, 220, 151, 0.5);
+        }
 
-    h1 {
-      text-align: center;
-      color: #3ddc97;
-      font-size: 2.5rem;
-      margin-bottom: 3rem;
-    }
+        details {
+            background-color: rgba(31, 46, 61, 0.9);
+            border-left: 4px solid #3ddc97;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            transition: transform 0.2s ease-in-out;
+        }
 
-    details {
-      background-color: #1f2e3d;
-      border: 1px solid #3ddc97;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-      padding: 1rem 1.5rem;
-      transition: all 0.3s ease-in-out;
-      overflow: hidden;
-    }
+        details:hover {
+            transform: scale(1.01);
+        }
 
-    details[open] {
-      animation: open 0.5s ease forwards;
-    }
+        summary {
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: #3ddc97;
+        }
 
-    @keyframes open {
-      from {
-        opacity: 0;
-        transform: scaleY(0.9);
-      }
-      to {
-        opacity: 1;
-        transform: scaleY(1);
-      }
-    }
+        ul {
+            margin-top: 0.5rem;
+            padding-left: 1.5rem;
+        }
 
-    summary {
-      font-size: 1.3rem;
-      font-weight: 600;
-      cursor: pointer;
-      position: relative;
-      padding-left: 1.5rem;
-    }
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
 
-    summary::before {
-      content: "➤";
-      position: absolute;
-      left: 0;
-      transition: transform 0.3s ease;
-    }
+        details > details {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-left: 3px dashed #3ddc97;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding: 0.75rem 1rem;
+        }
 
-    details[open] > summary::before {
-      transform: rotate(90deg);
-    }
-
-    ul {
-      margin: 1rem 0 0 1rem;
-      padding-left: 1rem;
-      list-style-type: disc;
-    }
-
-    li {
-      margin-bottom: 0.5rem;
-      font-size: 1rem;
-    }
-
-    /* Nested accordion styles */
-    details > details {
-      margin-top: 1rem;
-      background: #273c4f;
-      border: 1px solid #3ddc97aa;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.8rem;
-      }
-      summary {
-        font-size: 1.1rem;
-      }
-    }
-  </style>
+        ::marker {
+            color: #3ddc97;
+        }
+    </style>
 </head>
 
 <body>
-  <h1>Zero To Advance Frontend Course </h1>
-  <details>
-    <summary>Watch This Before Starting </summary>
-    <ul>
+    <h1>Javalaya MERN Stack Syllabus (200hrs) </h1>
 
-        <li>History of Internet </li>
-        <li>How World Wide Web work</li>
-        <li>How Internet comes to home</li>
-        <li>How Mobile internet Works</li>
-    </ul>
-  </details>
-
-  <details>
+    <details>
         <summary> HTML & CSS Basics</summary>
         <details>
             <summary>HTML</summary>
@@ -144,13 +101,6 @@
 
         </details>
     </details>
-
-
-
-
-
-
-
 
 
     <details>
@@ -229,6 +179,8 @@
                 <li>append and appendChild</li>
                 <li>Creating Elements using JavaScript</li>
                 <li>Removing Elements using JavaScript</li>
+                <li>Event Listeners</li>
+                <li>Mouse Events in JavaScript</li>
                 <li>Event Bubbling and Event Capturing in JavaScript</li>
                 <li>Event Simulation in JavaScript</li>
                 <li>Event Delegation in JavaScript</li>
@@ -242,12 +194,13 @@
             <summary>Asynchronous JavaScript</summary>
             <ul>
                 <li>What is API? Talking to the Outside World using JSON</li>
+                <li>What is XMLHttpRequest?</li>
                 <li>Synchronous vs Asynchronous JavaScript</li>
                 <li>Callback Hell in JavaScript</li>
                 <li>What are Promises?</li>
-                <li> Callback Hell using Promises</li>
-                <li>Introducing Fetch API </li>
-                <li>Async Await Explained</li>
+                <li>Let's Fix the Callback Hell using Promises</li>
+                <li>Introducing Fetch API | Better than XHR</li>
+                <li>Async Await Explained Like Never Before</li>
                 <li>Try and Catch Block</li>
                 <li>Optional Chaining</li>
                 <li>ES6 Modules | Import and Export</li>
@@ -266,9 +219,9 @@
                 <li>Getters and Setters</li>
                 <li>Prototypal Inheritance | Extends and Super Keyword</li>
                 <li>Demystifying THIS Keyword</li>
-                <li>Mastering JavaScript Dates
+                <li>Mastering JavaScript Dates: Part 1 - Understanding Time Zones, UTC, GMT, ISO, Unix Time, and Epoch
                 </li>
-                
+                <li>Mastering JavaScript Dates: Part 2 - Understanding Set Methods</li>
             </ul>
 
         </details>
@@ -283,7 +236,9 @@
                 <li>Why do we need React? |</li>
                 <li>How Much JavaScript do We Need for React?</li>
                 <li>What is React Element</li>
-                <li>What is JSX? </li>
+                <li>What is JSX? | Transform JSX with Babel |</li>
+                <li>How Source Maps Can Save You Time in React Development</li>
+                <li>Why Should You Learn React With Parcel? </li>
                 <li>Render Multiple Elements in React </li>
                 <li>Introduction to React Component </li>
                 <li>How to Use Images in React? </li>
@@ -296,41 +251,35 @@
             <summary>Intermediate</summary>
             <ul>
                 <li>Event Handling in ReactJS </li>
-                <li>How State Works in React</li>
-                <li>How useState Works </li>
+                <li>How State Works in React – Explained in Depth </li>
+                <li>How useState Works Behind the Scenes in React</li>
                 <li>State Vs Props in React | When to use what?</li>
                 <li>What are React Fragments? </li>
                 <li>What is Children Prop in React</li>
                 <li>Conditional Rendering in React |</li>
+                <li>How to Scope CSS to a Component in React?</li>
                 <li>useEffect Hook in React</li>
                 <li>React Router</li>
                 <li>Dynamic Routing in React</li>
-                <li> Create Custom Hooks in React</li>
+                <li>How to Create Custom Hooks in React</li>
 
             </ul>
         </details>
         <details>
             <summary>Advance </summary>
             <ul>
-                <li>Forms in React </li>
-                <li> Controlled Components</li>
+                <li>How To Work With Forms in React </li>
+                <li>Unidirectional Data Flow in React | Controlled Components</li>
                 <li>useRef Hook Explained </li>
                 <li>Create Custom Context</li>
                 <li>Context API</li>
-                <li> TailwindCSS with React </li>
+                <li>How to Use TailwindCSS with React </li>
                 <li>Code Splitting and Lazy Loading in React </li>
                 <li>Lifecycle Methods in React</li>
                 <li>Higher-Order Components In React </li>
                 <li>Virtual DOM, Reconciliation and Diffing Algorithm in React </li>
-               
+                <li>Build your own react.js library</li>
             </ul>
         </details>
     </details>
 
-
-
-    
-
- 
-</body>
-</html>
